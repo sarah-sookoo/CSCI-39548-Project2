@@ -20,3 +20,17 @@ Array.prototype.myMap = function(callbackFn) {
 
     return result;
   };
+
+  // FILTER //
+  Array.prototype.myFilter = function(callbackFn) {
+    // Place your code here.
+    var result = [];
+    let i = 0;
+
+    for (i=0; i<this.length; i++){
+      if (callbackFn(this[i]) == true){
+        result.push(this[i])
+      }
+    }
+    return result;
+  };
