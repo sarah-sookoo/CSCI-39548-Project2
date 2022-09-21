@@ -96,3 +96,15 @@ Array.prototype.myMap = function(callbackFn) {
     }
     return -1;
   };
+
+  // LASTINDEXOF //
+  Array.prototype.myLastIndexOf = function(searchElement) {
+    // Place your code here.
+    let i = 0;
+    for (i=this.length - 1; i>0; i--){ //traverse array backwards
+      if (this[i] == searchElement){
+        return i;
+      }
+    }
+    return -1;
+  };
