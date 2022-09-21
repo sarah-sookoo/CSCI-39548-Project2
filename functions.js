@@ -61,3 +61,14 @@ Array.prototype.myMap = function(callbackFn) {
     }
     return true;
 };
+
+  // REDUCE //
+  Array.prototype.myReduce = function(callbackFn) {
+    // Place your code here.
+    let sum = 0;
+    let i = 0;
+    for (i=0; i<this.length; i++){
+      sum += callbackFn(this[i]);
+    }
+    return sum;
+  };
