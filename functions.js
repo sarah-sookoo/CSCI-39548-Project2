@@ -48,3 +48,16 @@ Array.prototype.myMap = function(callbackFn) {
     }
     return false;
 };
+
+  // EVERY //
+  Array.prototype.myEvery = function(callbackFn) {
+    // Place your code here.
+    //if at least 1 is false -> return false, if none is false -> return true
+    let i = 0;
+    for (i=0; i<this.length; i++){
+      if (callbackFn(this[i]) == false){
+        return false;
+      }
+    }
+    return true;
+};
