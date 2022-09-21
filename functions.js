@@ -34,3 +34,17 @@ Array.prototype.myMap = function(callbackFn) {
     }
     return result;
   };
+
+  // SOME //
+  Array.prototype.mySome = function(callbackFn) { 
+    //at least 1 is true -> return true, if none is true -> return false
+    // Place your code here.
+    let i = 0;
+
+    for (i=0; i<this.length; i++){
+      if (callbackFn(this[i]) == true){
+        return true;
+      }
+    }
+    return false;
+};
