@@ -84,3 +84,15 @@ Array.prototype.myMap = function(callbackFn) {
         }
         return false;
       };
+
+  // INDEXOF //
+  Array.prototype.myIndexOf = function(searchElement) {
+    // Place your code here.
+    let i = 0;
+    for (i=0; i<this.length; i++){
+      if (this[i] == searchElement){
+        return i;
+      }
+    }
+    return -1;
+  };
