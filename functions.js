@@ -117,3 +117,12 @@ Array.prototype.myMap = function(callbackFn) {
           result.push(prop);
         return result;
       };
+  
+    // VALUES //
+    Object.myValues = function(object) {
+    // Place your code here.
+        let result = [];
+        for (const prop in Object)
+            result.push(Object[prop])
+        return result;
+    };
