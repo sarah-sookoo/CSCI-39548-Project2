@@ -108,3 +108,12 @@ Array.prototype.myMap = function(callbackFn) {
     }
     return -1;
   };
+
+    // KEYS //
+    Object.myKeys = function(object) {
+        // Place your code here.
+        let result = [];
+        for (const prop in Object)
+          result.push(prop);
+        return result;
+      };
