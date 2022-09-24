@@ -113,16 +113,16 @@ Array.prototype.myMap = function(callbackFn) {
     Object.myKeys = function(object) {
         // Place your code here.
         let result = [];
-        for (const prop in Object)
+        for (const prop in object)
           result.push(prop);
         return result;
       };
-  
+
     // VALUES //
     Object.myValues = function(object) {
     // Place your code here.
         let result = [];
-        for (const prop in Object)
-            result.push(Object[prop])
+        for (const prop in object)
+            result.push(object[prop])
         return result;
     };
