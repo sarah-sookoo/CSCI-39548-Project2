@@ -1,1 +1,2 @@
-# CSCI-39548-Project2
+# Sarah Sookoo (I worked individually)
+# Github username: sarah-sookoo
